@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/my logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web De<span id="typing-text">signer</span></p>
+                <h1>Hi I'm <span id="name">Patrick</span> <br>Mwanza from Kenya</h1>
+            </div>
+            <div class="header-image">
+                <img src="images/hero.png" class="hero">
+            </div>
+        </div>
+
+    </div>
+   <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="column-1">
+                    <img src="images/about.png" >
+                </div>
+                <div class="column-2">
+                    <h1 class="sub-tittle">About me</h1>
+                    <p>I'm a dedicated IT professional with a strong background in web development, data analysis, and graphic design. I enjoy creating clean, functional digital experiences and solving real-world problems through technology. With a keen eye for detail and a drive for continuous improvement, I take pride in delivering high-quality work that adds value. I'm also skilled in database management, transcription, and working efficiently in collaborative or independent environments.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')" >Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experiences')">Experiences</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>web development</span><br>Building responsive, functional websites</li>
+                            <li><span>data analysis</span><br>Interpreting data-driven insights</li>
+                            <li><span>graphic design</span><br>Creating clean, visual content</li>
+                            <li><span>database management</span><br>Organizing and securing data</li>
+                            <li><span>transcription</span><br>Converting audio to text</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li><span>2025-Current </span><br>PLP-Web Technologies Projects<br>Contributed to to real real-world web-based development projects</li>
+                            <li><span>2025-current</span><br>E-commerce website Mockup <br>designed and developed a mockup for an online store</li>
+                            <li><span>2024-2025</span> <br> Data Analysis Project<br>Analyzed data sets to extract meaningful insights</li>
+                            <li><span>2025-current</span><br>Database Management<br>Built and maintained sample SQL databases</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-Current</span><br>Bachelor in Development with Information Technology</li>
+                            <li><span>2024</span><br>Certificate in data analysis</li>
+                            <li><span>2025</span><br>PlP-Web Technologies Certificate of Achievement fullstack development</li>
+                            <li><span>2025</span><br>PLP Certificate in database management</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-List"> 
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>  Web Development</h2>
+                    <p>I build fast, responsive, and user-friendly websites tailored to your brand or business needs. Whether it's a portfolio, business site, or custom web app — I bring your ideas to life online.</p>
+                    <a href="https://github.com/PLP-WebTechnologies/feb-2025-final-project-and-deployment-Patrick-mwanza">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-file-chart-column"></i>
+                    <h2>  Data Analysis</h2>
+                    <p>I analyze complex data sets to extract actionable insights and support decision-making. My expertise includes statistical analysis, data visualization, and using tools like Python and SQL to manipulate data.</p>
+                    <a href="https://github.com/Patrick-mwanza/covid-19-analysis-project/blob/main/covid%2019%20datatracker.pdf">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>  Graphic Design</h2>
+                    <p>From sleek logos to engaging banners and social media visuals, I deliver clean, creative designs that make your brand stand out.</p>
+                    <a href="https://drive.google.com/file/d/1eIEkdpeo7bGSozODcUEyu-Np63OylcIh/view?usp=drive_link">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2> Database Management</h2>
+                    <p>Efficient data storage is key to smooth operations. I design, organize, and maintain databases for performance, security, and easy access.</p>
+                    <a href="https://github.com/Patrick-mwanza/clinic-booking-project">Learn More</a>
+                </div>
+            </div>
+
+            
+     </div>
+     <!-- portfolio -->
+      <div id="portfolio"></div>
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+            <img src="images/project 1.jpg" >
+            <div class="layer">
+                <h3> Web Development</h3>
+                <p>My first web development project is Allsoves Safari Company, a site for showcasing thrilling adventure safaris in Kenya. It highlights guided tours, wildlife experiences, and cultural trips.
+Click below to view the full project.</p>
+                <a href="https://safari-company-website.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/project 2.jpg" >
+            <div class="layer">
+                <h3> Data Analysis</h3>
+                <p>My first data analysis project is a COVID-19 Data Tracker, where I analyzed global case trends and patterns. It features interactive charts and insights for better understanding the pandemic.
+Click below to view the full project.</p>
+                <a href="https://github.com/Patrick-mwanza/covid-19-analysis-project/blob/main/covid%2019%20datatracker.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/project 3.jpg" >
+            <div class="layer">
+                <h3> Graphic Design</h3>
+                <p>My first graphic design project is a portfolio poster showcasing my skills and creativity. It features a clean layout, bold visuals, and a modern design style.
+Click below to view the full project.</p>
+                <a href="https://drive.google.com/file/d/1eIEkdpeo7bGSozODcUEyu-Np63OylcIh/view?usp=drive_link"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+      </div>
+      <a href="https://github.com/Patrick-mwanza?tab=repositories" class="btn">View All</a>
+      </div>
+        <!-- contact -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> munyaopatrick002@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +254 107287280</p>
+                    <div class="social-icons">
+                        <a href="https://wa.me/254798109651"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://instagram.com/munyaoz_patrick_25/#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/@Patric_mwanza"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com/in/patrick-mwanza-03b897359"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://t.me/PatrickMwanza"><i class="fab fa-telegram"></i></a>
+                    </div>
+                    <a href="#" download class="btn btn-2">Download CV</a>
+                    </div>
+                <div class="contact-right">
+                <form action="https://formspree.io/f/mdkgjlle" method="POST">
+                    <h1>Get In Touch</h1>
+
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-2">Send Message</button>
+                </form>
+    <div class="loader-container">
+    <div id="circle-loader"></div>
+    <span id="loading-text">Sending message...</span>
+  </div>
+  </div>
+                </div>
+                <div class="copyright">
+                    <p>copyright &copy; 2025 Patrick Mwanza <i class="fa-solid fa-heart"></i>. All rights reserved.</p>
+                </div>
+            </div>
+    <script src="script.js"></script>
+</body>
+</html>
