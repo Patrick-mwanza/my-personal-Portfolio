@@ -67,3 +67,19 @@ setInterval(() => {
   document.getElementById("loading-text").textContent = texts[t % texts.length];
   t++;
 }, 2000);
+
+
+
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  });
+
+  document.querySelectorAll('.scroll-in').forEach(el => observer.observe(el));
+</script>
+
