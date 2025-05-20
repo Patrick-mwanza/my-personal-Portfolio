@@ -71,5 +71,19 @@ setInterval(() => {
 
 
 
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle("in-view", entry.isIntersecting);
+    });
+  });
+
+  document.querySelectorAll('.services-List div, .work').forEach(el => {
+    observer.observe(el);
+  });
+
+
+
+
+
 
 
