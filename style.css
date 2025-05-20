@@ -437,6 +437,31 @@ form .btn-2:hover {
 
 
 
+@media only screen and (max-width: 600px) {
+  .services-List div,
+  .work,
+  .column-1 img,
+  .column-2,
+  .header-text,
+  .header-image img {
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+
+
+
 
 
 
