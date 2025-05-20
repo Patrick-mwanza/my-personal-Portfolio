@@ -446,14 +446,33 @@ form .btn-2:hover {
     animation-delay: 0.2s;
   }
 
-  @keyframes fadeInMobile {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  @media (hover: none) and (pointer: coarse) {
+  .services-List div,
+  .work {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+  }
+
+  .services-List div.in-view,
+  .work.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .layer {
+    height: 0;
+    transition: height 0.5s;
+  }
+
+  .work.in-view .layer {
+    height: 100%;
+  }
+
+  .work.in-view img {
+    transform: scale(1.1);
   }
 }
-
 
 
 
