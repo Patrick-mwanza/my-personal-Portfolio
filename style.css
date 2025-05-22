@@ -17,10 +17,17 @@ color: #fff;
     margin-top: -50px;
 }
 nav {
+    nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: black;
+}
+
 }
 .logo {
     width: 160px;
