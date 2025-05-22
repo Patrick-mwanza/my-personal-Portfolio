@@ -17,7 +17,6 @@ color: #fff;
     margin-top: -50px;
 }
 nav {
-    nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +24,6 @@ nav {
     z-index: 1000;
     background: black;
     position: sticky;
-}
 
 }
 .logo {
